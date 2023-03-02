@@ -27,6 +27,7 @@
   $arr = array("Nirmal","Neupane","BIM","4th sem");
 
   //Printing using for loop 
+  //count() function is used to find the length of an array
   for($i=0;$i<count($arr);$i++){
       echo $arr[$i]."<br>";
   }
