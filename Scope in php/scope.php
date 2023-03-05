@@ -4,7 +4,7 @@ local
 global
 static
 
-//a.global scope
+a.global scope
 A variable declared outside a function has a GLOBAL SCOPE and can only be accessed outside a function:
 example:
 <?php
@@ -22,9 +22,10 @@ echo "<p>Variable x outside function is: $x</p>";
 
 ?>
 
-//b. local scope
+b. local scope
 A variable declared within a function has a LOCAL SCOPE and can only be accessed within that function:
-example: ?
+example: 
+
 <?php
 function myTest()
 {
@@ -33,11 +34,9 @@ function myTest()
 }
 myTest();
 
-// using x outside the function will generate an error
-echo "<p>Variable x outside function is: $x</p>";
 ?>
 
-//c. static
+c. static
 Normally, when a function is completed/executed, all of its variables are deleted. However, sometimes we want a local
 variable NOT to be deleted. We need it for a further job.
 <?php
