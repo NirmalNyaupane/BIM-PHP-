@@ -17,6 +17,7 @@
         echo $comm."<br>";
     }
 ?>
+<html>
 <head>
     <title>Document</title>
 </head>
