@@ -4,17 +4,13 @@
     $username="root";
     $password="";
     $database= "bim";
-
     $conn = mysqli_connect($host,$username,$password,$database);
 
     if(!$conn){
         echo die("Connection unsucessfull");
     }
 
-
-
     $id = $name=$address=$faculty="";
-
 
     if($_SERVER["REQUEST_METHOD"]=="POST"){
         $id=$_POST['id'];
